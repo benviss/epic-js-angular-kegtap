@@ -1,3 +1,184 @@
+body {
+  background-color: rgb(230 ,230 ,230);
+}
+
 h1 {
-  color: blue;
+  color: darkred;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+ul {
+  clear: both;
+  float: left;
+  list-style: none;
+}
+
+h2 {
+  color: darkred;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 15px;
+  float: left;
+}
+
+.header {
+  margin: 40px;
+}
+
+.button {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  float: right;
+  margin: 15px;
+  margin-top: -8px;
+  height: 65px;
+}
+
+.dropdown {
+  padding: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20 auto;
+  margin-top: 30px;
+  clear: both;
+  display: block;
+  text-align: center;
+}
+
+.input {
+  height: 35;
+  width: auto;
+  margin: 15px;
+  float: left;
+  border-radius: 5px;
+  border: solid 1px lightgrey;
+}
+
+#keg-header {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Open Sans', serif;
+  font-weight: bolder;
+  padding: 20px;
+  margin: 15px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 2;
+}
+
+#keg-form {
+  height: auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.tap {
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 90%;
+  display: block;
+  margin: 25px auto;
+}
+
+.keg-info {
+  text-align: left;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  float: right;
+  right: 50px;
+}
+
+.drinkBeer {
+  position: absolute;
+  height: 70px;
+  width: 150px;
+  top: 80%;
+  left: 60%;
+}
+
+#keg-animation {
+  right: 0;
+  position: absolute;
+  top: 30px;
+  left: 60.2%;
+  width: 182px;
+  height: 275px;
+  background-color: beercolor;
+}
+
+.beer-stage-one {
+  background-color: rgb(255	,230	,153);;
+}
+
+.beer-stage-two {
+  background-color: rgb(246	,199	,107	);
+}
+
+.beer-stage-three {
+  background-color: rgb(227	,155	,55	);
+}
+
+.beer-stage-four {
+  background-color: rgb(206	,128	,46	);
+}
+
+.beer-stage-five {
+  background-color: rgb(185	,102	,39	);
+}
+
+.beer-stage-six {
+  background-color: rgb(168	,87	,35	);
+}
+
+.beer-stage-seven {
+  background-color: rgb(159	,74	,36	);
+}
+
+.beer-stage-eight {
+  background-color: rgb(127	,50	,22	);
+}
+
+.beer-stage-nine {
+  background-color: rgb(99	,29	,14	);
+}
+.beer-stage-ten {
+  background-color: rgb(47	,13	,12	);
+}
+
+.keg-level {
+  width: 182px;
+  height: 2.232px;
+  background-color: white;
+  z-index: -1;
+}
+
+#keg-icon {
+  height: 279px;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 59.5%;
+  z-index: 1;
 }

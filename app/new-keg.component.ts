@@ -4,25 +4,33 @@ import { Keg } from './keg.model';
 @Component({
   selector: "new-keg",
   template:`
-  <h2>New Keg:</h2>
-  <input #name placeholder="Name">
-  <input #brand placeholder="Brand">
-  <input #price placeholder="Price">
-  <input #alcohol placeholder="Alcohol">
+  <div id="keg-form">
+    <h2 class="subheader">New Keg:</h2>
+    <input class="input" #brand placeholder="Brand">
+    <input class="input" #name placeholder="Name">
+    <input class="input" #type placeholder="Type">
+    <input class="input" #bitterness placeholder="Bitterness">
+    <input class="input" #alcohol placeholder="Alcohol Content">
+    <input class="input" #price placeholder="Price">
+  </div>
+  <div>
   <button class="button" (click)=
-  "addNewKeg(name.value, brand.value, price.value, alcohol.value);
-  name.value = '';
+  "addNewKeg(brand.value, name.value, type.value, bitterness.value, alcohol.value, price.value);
   brand.value = '';
-  price.value = '';
+  name.value = '';
+  type.value = '';
+  bitterness.value = '';
   alcohol.value = '';
+  price.value = '';
   ">Add Keg</button>
+  </div>
   `
 })
 
 export class NewKegComponent {
   @Output() newKegSender = new EventEmitter();
-  addNewKeg(name: string, brand: string, price: number, alcohol: number) {
-    var newKegToAdd = new Keg(name, brand, price, alcohol);
+  addNewKeg(brand: string, name: string, type: string, bitterness: number, alcohol: number, price: number) {
+    var newKegToAdd = new Keg(brand, name, type, bitterness, alcohol, price);
     console.log(newKegToAdd);
     this.newKegSender.emit(newKegToAdd);
   }

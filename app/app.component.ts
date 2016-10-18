@@ -17,14 +17,15 @@ import { Keg } from './keg.model';
 export class AppComponent {
   public masterKegList: Keg[] = [];
 
+  constructor() {
+  this.masterKegList = [
+    new Keg("Deschutes", "Pinedrops", "IPA", 70, 6.5, 5)
+    ];
+  }
+
   addKeg(newKeg: Keg) {
     this.masterKegList.push(newKeg);
     console.log(this.masterKegList);
   }
-
-  // selectedTask: Task = null;
-  // showDetails(clickedTask: Task) {
-  //   this.selectedTask = clickedTask;
-  // }
 
 }
